@@ -1,0 +1,28 @@
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 2px dotted #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  @keyframes animate {
+    0%
+    {
+      transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+      transform: translate(-50%,-50%) rotate(360deg);
+    }
+  }
+  .expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+    cursor: none !important;
+  }

@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;600&display=swap');
+:root {
+  --main-bg: #2C3333;
+  --sec-bg: #395B64;
+}
+body{
+margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Anek Latin', sans-serif;
+  overflow: hidden;
+  cursor: none;
+  background-color: var(--main-bg);
+  
+  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+  /* background-image: url(fallback-gradient.svg); */
+  
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--main-bg)), to(var(--sec-bg)));
+  
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(left, var(--main-bg), var(--sec-bg));
+  
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(left, var(--main-bg), var(--sec-bg));
+  
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(left, var(--main-bg), var(--sec-bg));
+  
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(to right, var(--main-bg), var(--sec-bg));
+
+  overflow: hidden;
+}
