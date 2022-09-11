@@ -7,7 +7,7 @@ import * as THREE from "three";
   styleUrls: ['./cube.component.css']
 })
 export class CubeComponent implements OnInit {
-  imgSrc:any;
+
   
     constructor() {}
    

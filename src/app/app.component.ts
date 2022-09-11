@@ -8,6 +8,7 @@ import * as THREE from "three";
 })
 export class AppComponent {
   title = 'portfolio';
+  imgSrc:any;
 
   top:any;
   left:any;
